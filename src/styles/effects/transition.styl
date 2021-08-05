@@ -1,0 +1,25 @@
+// Global
+[class*='-transition']
+  transition-duration: 368ms
+
+.fade-transition
+  transition-property: opacity
+
+  &-enter,
+  &-leave-active
+    opacity: 0
+
+.slide-transition
+  transition-property: all
+
+  &-enter,
+  &-leave-active
+    opacity: 0
+    transform: translateY(-20px)
+
+.expand-width-transition
+  transition-property: width
+
+  &.expand-width-enter,
+  &.expand-width-leave
+    width: 0
